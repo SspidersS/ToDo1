@@ -2,9 +2,11 @@ package org.example.todolist.services;
 
 import org.example.todolist.exceptions.NoteNotFoundException;
 import org.example.todolist.model.Note;
+import org.springframework.stereotype.Service;
 
 import java.util.*;
 
+@Service
 public class NoteService {
     private Map<Long, Note> noteStorage = new HashMap<>();
     private static Random random = new Random();
